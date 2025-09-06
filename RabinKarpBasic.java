@@ -8,7 +8,7 @@ public class RabinKarpBasic {
 
         for (int i = 0; i <= n - m; i++) {
             String sub = text.substring(i, i + m);
-            if (sub.equals(pattern)) {
+            if (sub.equalsIgnoreCase(pattern)) {
                 System.out.println("Pattern found at index: " + i);
             }   
         }
